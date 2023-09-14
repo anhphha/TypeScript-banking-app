@@ -132,15 +132,15 @@ You can add more codes to check the functionality and security of your banking s
 ## Findings
 
 1. **Customer3 Creation Issue**
-   - Customer3 wasn't created because it had the same name as customer1. Therefore, changed the name from "John" to "David"
+   - Customer3 wasn't created because it had the same name as ```customer1```. Therefore, I changed the name from ```John``` to ```David```
 
 2. **Duplicate Branch Name**
-   - There were two attempts to add a branch called West Branch. Only the first was successful. We can leave them like that or remove the duplicate. I decided to remove the duplicate code.
+   - There were two attempts to add a branch called ```West Branch```. Only the first was successful. We can leave them like that or remove the duplicate. I decided to remove the duplicate code.
 
 3. **Wrong Branch for Customer2**
-   - Customer 2 were assigned to sunBranch but the transaction were added for west branch. That's why the result record was not correct. Therefore, I corrected the name branch for customer2.
+   - ```Customer2``` were assigned to ```sunBranch``` but the transaction were added for ```westBranch```. That's why the result record was not correct. Therefore, I corrected the name branch for ```customer2```.
 
 4. **Typo Correction**
-   - There was a typo in the `addTransaction` method (addTransactions).
+   - There was a typo in the `addTransaction` method (from ```addTransactions```).
 
 These modifications ensure that the code functions correctly as intended.
