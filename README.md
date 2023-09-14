@@ -3,6 +3,24 @@
 - Complete the challenge: banking application
 - Check the scripts in `package.json` to run the suitable command for each challenge
 
+## Technologies
+
+- TypeScript
+
+## Project Structure
+````
+┣ src/
+┃ ┣ bank.ts
+┃ ┣ branch.ts
+┃ ┣ customer.ts
+┃ ┣ index.html
+┃ ┣ index.ts
+┃ ┗ transaction.ts
+┣ package.json
+┣ README.md
+┗ tsconfig.json
+````
+
 ## Create a simple banking application
 
 Implement the following classes, interface, and codes (you can decide which file to put each type, but do not write all the types in `index.ts` or `bank.ts`). All the properties must be kept private, while you can make the methods as public
@@ -109,3 +127,20 @@ You can add more codes to check the functionality and security of your banking s
 
 1. After clone the project from your forked repo, run `npm install`
 2. Run `npm run watch` to see code running in watch mode, or check `package.json` for extra scripts
+
+
+## Findings
+
+1. **Customer3 Creation Issue**
+   - Customer3 wasn't created because it had the same name as customer1. Therefore, changed the name from "John" to "David"
+
+2. **Duplicate Branch Name**
+   - There were two attempts to add a branch called West Branch. Only the first was successful. We can leave them like that or remove the duplicate. I decided to remove the duplicate code.
+
+3. **Wrong Branch for Customer2**
+   - Customer 2 were assigned to sunBranch but the transaction were added for west branch. That's why the result record was not correct. Therefore, I corrected the name branch for customer2.
+
+4. **Typo Correction**
+   - There was a typo in the `addTransaction` method (addTransactions).
+
+These modifications ensure that the code functions correctly as intended.
