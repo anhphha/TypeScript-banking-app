@@ -11,7 +11,7 @@ const customer3 = new Customer("David");
 
 arizonaBank.addBranch(westBranch);
 arizonaBank.addBranch(sunBranch);
-arizonaBank.addBranch(westBranch);
+// arizonaBank.addBranch(westBranch);
 
 arizonaBank.findBranchByName("bank");
 arizonaBank.findBranchByName("sun");

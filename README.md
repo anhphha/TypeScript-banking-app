@@ -144,3 +144,31 @@ You can add more codes to check the functionality and security of your banking s
    - There was a typo in the `addTransaction` method (from ```addTransactions```).
 
 These modifications ensure that the code functions correctly as intended.
+
+## Result
+
+```
+4000
+Customer at branch West Branch
+Customer name: John
+Customer ID: lmije1lm23eib46e92l
+Customer transaction: [{"amount":3000,"date":"2023-09-14T02:13:36.539Z"},{"amount":2000,"date":"2023-09-14T02:13:36.539Z"},{"amount":-1000,"date":"2023-09-14T02:13:36.539Z"}]
+Balance: 4000
+
+Customer name: David
+Customer ID: lmije1lml72fzbgazqq
+Customer transaction: []
+Balance: 0
+
+true
+Customer at branch Sun Branch
+Customer name: John
+Customer ID: lmije1lm23eib46e92l
+Customer transaction: [{"amount":3000,"date":"2023-09-14T02:13:36.539Z"},{"amount":2000,"date":"2023-09-14T02:13:36.539Z"},{"amount":-1000,"date":"2023-09-14T02:13:36.539Z"}]
+Balance: 4000
+
+Customer name: Anna
+Customer ID: lmije1lmg1fos7xlu6n
+Customer transaction: [{"amount":3000,"date":"2023-09-14T02:13:36.539Z"}]
+Balance: 3000
+```
